@@ -1,0 +1,538 @@
+//*font-family: 'Crimson Text', serif;
+font-family: 'Open Sans', sans-serif;*//
+* {
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	text-decoration: none;
+	list-style: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Open Sans', sans;
+    font-size: 16px;
+    color: #000;
+}
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 64px;
+    color: #fff;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #2E4568;
+    padding-bottom: 25px;
+}
+h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #2E4568;
+}
+hr {
+    width: 76px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #28C3F3;
+}
+.mobile-view {
+	display: none;
+}
+.desktop-view {
+    display: block;
+}
+.contenedor {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/*Whatsapp icono*/
+.whatsapp-icono {
+    position: fixed;
+    right: 15px;
+    top: 100px;
+    height: 90px;
+    width: 93px;
+    background-image: url(../images/whatsapp.png);
+    overflow: hidden;
+    z-index: 999;
+}
+.whatsapp-icono:hover {
+    background-position-y: 90px;
+}
+/*Fin Whatsapp icono*/
+/*Header*/
+.header {
+    height: 100vh;
+    background-image: url(../images/fondo-header-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header {
+	transition: all 0.7s;
+	position: absolute;
+	z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    background-color: transparent;
+}
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1674px;
+    margin: 0 auto;
+    padding: 0;
+}
+header .contenedor .logo-mobile {
+    display: none;
+}
+header.stickyHeader {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: 0px 3px 8px 0px rgba(227,227,227,1);
+    padding: 7px 15px;
+}
+header.stickyHeader .contenedor .logo-mobile {
+    display: block;
+}
+header.stickyHeader .contenedor {
+    padding: 0;
+}
+header.stickyHeader .logo-header-blanco {
+    display: none;
+}
+header.stickyHeader nav li a {
+    color: #000;
+}
+header.stickyHeader .menu {
+    padding-top: 28px;
+}
+header.stickyHeader select {
+    color: #000;
+}
+header.stickyHeader .menu nav li:nth-child(5) {
+    border-left: 1px solid #000;
+}
+header.stickyHeader .menu nav li:nth-child(5) > a{
+    color: #3AB7FF;
+}
+
+header.stickyHeader .menu nav li:nth-child(6) > a{
+    color: #3AB7FF;
+}
+
+header.stickyHeader .menu nav li:nth-child(6) {
+    border-right: 1px solid #000;
+}
+.header-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu {
+    padding-top: 20px;
+}
+.menu ul {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.menu nav li {
+    padding-right: 45px;
+    display: inline-block;
+}
+.menu nav li:nth-child(6) {
+    padding-right: 25px;
+    border-right: 1px solid #fff;
+}
+.menu nav li:nth-child(4) {
+    padding-right: 25px;
+}
+.menu nav li:nth-child(5) {
+    padding-right: 25px;
+    border-left: 1px solid #fff;
+    padding-left: 25px;
+}
+.menu nav li a {
+	font-size: 19px;
+	color: #fff;
+}
+.menu nav a:hover {
+	color: #000;
+}
+header.stickyHeader .menu nav a:hover {
+	color: #3AB7FF;
+}
+.logo-color {
+    padding-bottom: 25px;
+}
+header select {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    color: #fff;
+	font-size: 16px;
+}
+select option {
+    background-color: #5B5B5B;
+}
+.navbar-toggler, .header-redes-mobile, .header-mobile {
+	display: none;
+}
+.texto-header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.texto-header span {
+    display: inline-block;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.texto-header span h1 {
+    line-height: 80px;
+}
+.texto-header span hr {
+    margin-top: 20px;
+}
+.texto-header span p {
+    font-size: 22px;
+    color: #fff;
+}
+/*Fin header*/
+/*Sobre mi*/
+.sobre-mi {
+    text-align: center;
+    padding: 120px 20px 75px 20px;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(227,227,227,1);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(227,227,227,1);
+    box-shadow: 0px 3px 8px 0px rgba(227,227,227,1);
+    margin-bottom: 50px;
+}
+.sobre-mi h3 {
+    padding:35px 0;
+}
+.sobre-mi .card-body {
+    padding: 0;
+}
+.sobre-mi .card .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.sobre-mi .card {
+    border: 0;
+} 
+.sobre-mi .card-header {
+    background-color: #fff; 
+    border-bottom: 0;
+}
+.card-header h2 {
+    padding: 10px 0;
+}
+.sobre-mi .btn-block {
+    display: inline;
+    width: inherit;
+}
+.sobre-mi .btn-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color:#fff;
+    background-color: #000;
+    font-size: 16px;
+    padding: 15px 11px;
+    border-radius: 0;
+}
+.sobre-mi .btn-link:active, .btn-link:focus {
+    text-decoration: none;
+}
+.sobre-mi .btn-link:hover {
+background-color: #000;
+color:#fff;
+text-decoration: none;
+}
+.sobre-mi .btn-link.btn-link.collapsed {
+    background-color: #005EC8;
+}
+.sobre-mi .sobre-mi .btn-link:hover img{
+    filter: brightness(0) invert(1);
+}
+.sobre-mi .btn-link span {
+    margin-right: 5px;
+}
+.sobre-mi .btn-link img {
+    margin-bottom: 0px;
+    transform: rotate(180deg);
+    transition: transform .5s;
+}
+.sobre-mi .btn-link.collapsed img {
+    transform: rotate(0deg);
+    transition: transform .5s;
+}
+/*Fin seccion sobre mi*/
+/*Seccion servicios eeuu*/
+.servicios-eeuu {
+    text-align: center;    
+    padding: 100px 20px 50px 20px;
+}
+.servicios-eeuu img {
+    padding-bottom: 35px;
+}
+.servicios-eeuu figure {
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contiene-servicios {
+    padding-top: 75px;
+}
+/*Fin seccion servicios eeuu*/
+/*Seccion impuestos*/
+.impuestos {
+    background-color: #F6F6F6;
+    padding: 105px 20px 100px 20px;
+}
+.impuestos h3 {
+    max-width: 440px;
+    line-height: 30px;
+}
+/*Fin seccion impuestos*/
+/*Sección Argentina*/
+.servicios-argentina {
+    padding: 150px 20px 205px 20px;
+    text-align: center;
+}
+.alinado-bottom {
+    padding-bottom: 35px;
+}
+.contenedor-preguntas {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-preguntas span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.servicios-argentina h4 {
+    color: #4B5A71;
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: inline;
+    padding-left: 20px;
+}
+.servicios-argentina .card {
+	background-color: #fff;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid #ddd;
+}
+.accordion {
+    margin-top: 50px;
+}
+.card button {
+	width: 100%;
+}
+
+.card-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: start;
+    line-height: 24px;
+    padding-top: 0;
+}
+.servicios-argentina .card-header {
+	background-color: #fff;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	padding: 0;
+}
+.servicios-argentina .btn-link:hover, .preguntas-frecuentes .btn-link:focus {
+    text-decoration: none;
+}
+.servicios-argentina .btn-link:hover {
+  background-color: #fff;
+}
+.servicios-argentina .accordion>.card:not(:last-of-type) {
+	border-bottom: 1px solid #ddd;
+}
+.servicios-argentina .btn {
+	padding: 15px 0px;
+}
+.servicios-argentina h4:focus {
+  outline: none;
+}
+.servicios-argentina .btn-link.btn-link.collapsed {
+    background-color: #fff;
+}
+/*Fin sección Argentina*/
+/*Seccion contacto*/
+.sec-contacto .contenedor {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto aside  {
+    width: 50%;
+}
+.contacto article {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 90px;
+    padding-left: 20px;
+}
+.contacto p {
+    color: #5B5B5B;
+    max-width: 492px;
+    text-align: start;
+    padding-bottom: 45px;
+}
+.contacto aside {
+    overflow: hidden;
+}
+.contacto aside:hover img {
+    transform: scale(1.07);
+    transition: all .2s;
+}
+.contacto aside img {
+    transition: all .2s;
+}
+.contacto form {
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: start;
+    padding-bottom: 50px; 
+}
+.contacto form input {
+    width: 100%;
+    border: 1px solid #A8A8A8;
+    font-size: 14px;
+    padding: 12px 20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.contacto form textarea {
+    width: 100%;
+    border: 1px solid #A8A8A8;
+    font-size: 14px;
+    padding: 12px 20px;
+    color: #000;
+    margin-bottom: 10px;
+    height: 122px;
+}
+.contacto form button {
+    background-color: #005EC8;
+    text-transform: uppercase;
+    padding: 18px 50px;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.contacto form button:hover {
+    background-color: #000;
+} 
+/*Seccion contacto*/
+/*Seccion horarios*/
+.horarios {
+    background-color: #F6F6F6;
+    padding: 100px 0;
+}
+.horarios img {
+    padding-right: 15px;
+}
+.telefono {
+    display: inline-block;
+    padding-top: 20px;
+}
+.fa-phone {
+    font-size: 35px;
+    color: #3AB7FF;
+    padding-right: 15px;
+}
+.horarios p {
+    font-size: 18px;
+    color: #070707;
+    display: inline;
+}
+.horarios a:hover p {
+    color: #28C3F3;
+}
+.contiene-horario, .contiene-horario div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contiene-horario div span:last-child {
+    padding-left: 20px;
+}
+/*Fin seccion horarios*/
+/*footer*/
+footer {
+    background-image: url(../images/fondo-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+footer .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1674px;
+    margin: 0 auto;
+}
+footer .contenedor div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .contenedor div a {
+    padding-right: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+footer .contenedor div a:hover {
+    color: #3AB7FF;
+}
+footer .contenedor div span {
+    display: inline;
+    border-left: 1px solid #fff;
+}
+footer .contenedor div span img {
+    padding-left: 20px;
+}
+/*fin footer*/
